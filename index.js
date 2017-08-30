@@ -10,11 +10,10 @@ module.exports = {
       var settings = dataSource.settings || {};
 
       function createRenderings(renderings) {
-        var jobs = renderings.map(function(rendering) {
+        return promise.mapSeries(renderings, function(rendering) {
           return createRendering(
             rendering.id, rendering.html, rendering.extension, rendering.folder)
-        })
-        return promise.all(jobs);
+        });
       }
 
       function createRendering(id, html, extension, folder) {
