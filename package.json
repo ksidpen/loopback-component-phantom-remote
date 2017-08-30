@@ -1,0 +1,24 @@
+{
+  "name": "loopback-component-phantom-remote",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksidpen/loopback-component-phantom-remote.git"
+  },
+  "author": "ksidpen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ksidpen/loopback-component-phantom-remote/issues"
+  },
+  "homepage": "https://github.com/ksidpen/loopback-component-phantom-remote#readme",
+  "dependencies": {
+    "base64-stream": "^0.1.3",
+    "bluebird": "^3.5.0",
+    "request": "^2.81.0"
+  }
+}
