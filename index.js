@@ -37,9 +37,6 @@ module.exports = {
           },
           json: true,
           url: settings.url + '/print'
-        }, function (err){
-          if (err)
-            reject(err)
         })
         req.on('error', function(err) {
           reject(err)
