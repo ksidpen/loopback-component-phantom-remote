@@ -13,6 +13,9 @@ module.exports = {
       return promise.mapSeries(renderings, function(rendering) {
         return createRendering(
           rendering.id, rendering.html, rendering.extension, rendering.folder)
+          .catch(function (err) {
+            return err;
+          })
       });
     }
 
